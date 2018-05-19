@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>...CSS GRID...</title>
+  </head>
+  <style>
+    body {
+      color: #fff;
+      font-family: 'Nunito Semibold';
+      text-align: center;
+    }
+    #content {
+      display: grid;
+      /* column */
+      grid-template-columns: repeat(3, 1fr);
+      /* row */
+      grid-auto-rows: minmax(150px, auto);
+
+      /* gap */
+      grid-gap: 10px;
+      max-width: 960px;
+      margin: 0 auto;
+
+      /* up and down */
+      /* align-items:start; */
+      /* left and right */
+      /* justify-items:end; */
+    }
+    #content div {
+      background: #3bbced;
+      padding: 1em;
+    }
+    #content div:nth-child(even){
+      background-color: #777;
+    }
+    .one {
+      justify-self: end;
+      align-self: end;
+    }
+    .two {
+      justify-self: center;
+      align-self: center;
+    }
+    .three {
+      justify-self: start;
+      align-self: start;
+    }
+
+  </style>
+  <body>
+    <div class="" id="content">
+
+      <div class="one">1</div>
+      <div class="two">2</div>
+      <div class="three">3</div>
+      <div class="four">4</div>
+      <div class="five">5</div>
+      <div class="six">6</div>
+
+    </div>
+  </body>
+</html>
